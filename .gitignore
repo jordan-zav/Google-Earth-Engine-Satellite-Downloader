@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+outputs/
+*.download
+*.log
+*.aux.xml
+*.ovr
+*.tif
+*.tiff
+*.zip

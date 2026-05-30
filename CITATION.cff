@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata from this file."
+title: "Google Earth Engine Satellite Downloader"
+authors:
+  - family-names: "Zav"
+    given-names: "Jordan"
+repository-code: "https://github.com/jordan-zav/gee-satellite-downloader"
+url: "https://github.com/jordan-zav/gee-satellite-downloader"
+license: "MIT"
+version: "0.1.0"
+date-released: "2026-05-30"
+keywords:
+  - "Google Earth Engine"
+  - "Landsat"
+  - "ASTER"
+  - "remote sensing"
+  - "GeoTIFF"
