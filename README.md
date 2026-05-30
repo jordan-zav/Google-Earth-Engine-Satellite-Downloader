@@ -61,6 +61,22 @@ Bandas finales:
 12. mgoh_carbonate_proxy_b7_b9_b8
 13. clay_relative_absorption_b6
 
+## Instalación y autenticación
+
+Instalar dependencias:
+
+pip install -r requirements.txt
+
+Autenticarse en Google Earth Engine:
+
+earthengine authenticate
+
+Si se usa un proyecto específico de Google Cloud, pasar el identificador con --project-id.
+
+Ejemplo:
+
+python descarga_por_shapefile/download_landsat_shapefile.py --shapefile data/area.shp --name study_area --project-id your-project-id
+
 ## Comandos de uso
 
 Ejemplo para Landsat:
