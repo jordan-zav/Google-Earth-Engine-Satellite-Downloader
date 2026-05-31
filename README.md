@@ -20,6 +20,7 @@ Los scripts aplican el mismo flujo depurado:
 8. Unir las 4 subpartes en un GeoTIFF final Float32.
 9. Validar CRS, número de bandas y tipo de dato.
 10. Guardar un resumen técnico en summary.json.
+11. Opcionalmente unir todas las teselas de cada sensor en un mosaico único.
 
 ## Scripts incluidos
 
@@ -61,6 +62,10 @@ Bandas finales:
 12. mgoh_carbonate_proxy_b7_b9_b8
 13. clay_relative_absorption_b6
 
+merge_tiles_by_sensor.py
+
+Une teselas GeoTIFF ya descargadas por carpeta de sensor. Detecta automáticamente carpetas con archivos x000_y000.tif, crea un mosaico Float32 y guarda el resultado en la misma carpeta.
+
 ## Instalación y autenticación
 
 Instalar dependencias:
@@ -99,6 +104,18 @@ python descarga_por_shapefile/download_landsat_shapefile.py --shapefile data/are
 
 python descarga_por_shapefile/download_aster_shapefile.py --shapefile data/area.shp --name study_area --limit-tiles 2
 
+Unir teselas por sensor:
+
+python descarga_por_shapefile/merge_tiles_by_sensor.py --root outputs/by_shapefile
+
+Revisar qué carpetas se unirían sin crear mosaicos:
+
+python descarga_por_shapefile/merge_tiles_by_sensor.py --root outputs/by_shapefile --dry-run
+
+Regenerar mosaicos existentes:
+
+python descarga_por_shapefile/merge_tiles_by_sensor.py --root outputs/by_shapefile --overwrite
+
 ## Parámetros principales
 
 --shapefile
@@ -133,6 +150,14 @@ Muestra el plan de descarga sin descargar archivos.
 
 Limita la cantidad de teselas procesadas. Sirve para probar antes de lanzar una descarga grande.
 
+--overwrite
+
+En merge_tiles_by_sensor.py, permite reemplazar un mosaico existente.
+
+--show-gdal-warnings
+
+En merge_tiles_by_sensor.py, muestra advertencias detalladas de GDAL. Por defecto se silencian para evitar ruido en consola.
+
 ## Estructura de salida
 
 outputs/by_shapefile/NOMBRE/PRODUCTO/final_tiles
@@ -146,6 +171,10 @@ Contiene las subpartes usadas para reconstruir teselas que fallaron en descarga 
 outputs/by_shapefile/NOMBRE/PRODUCTO/logs
 
 Contiene summary.json con el resumen de ejecución.
+
+outputs/by_shapefile/NOMBRE/PRODUCTO/final_tiles/NOMBRE_PRODUCTO_mosaic.tif
+
+Mosaico final generado por merge_tiles_by_sensor.py.
 
 ## Nomenclatura normalizada
 
