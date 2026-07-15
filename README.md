@@ -1,4 +1,11 @@
-# ⚖️ Licencia / License (Dual Licensing)
+# Google Earth Engine Satellite Downloader
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
+[![Google Earth Engine](https://img.shields.io/badge/Google%20Earth%20Engine-supported-brightgreen.svg)](https://earthengine.google.com/)
+
+
+## ⚖️ Licencia (Licencia Dual)
 
 Este proyecto se distribuye bajo un modelo de **Licencia Dual**:
 
@@ -8,11 +15,6 @@ Este proyecto se distribuye bajo un modelo de **Licencia Dual**:
 Para más detalles, consulta el archivo [LICENSE](LICENSE).
 
 ---
-# Google Earth Engine Satellite Downloader
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
-[![Google Earth Engine](https://img.shields.io/badge/Google%20Earth%20Engine-supported-brightgreen.svg)](https://earthengine.google.com/)
 
 ## Objetivo
 
@@ -234,4 +236,4 @@ Si usas este repositorio en un proyecto académico o técnico, cita el software 
 
 ## Licencia
 
-Este proyecto está sujeto a los términos de la licencia GNU GPLv3 y el acuerdo de Licencia Dual descrito al inicio de este documento. Ver el archivo [LICENSE](LICENSE) para más detalles.
+Este proyecto está sujeto a los términos de la licencia GNU GPLv3 y el acuerdo de Licencia Dual descrito anteriormente. Ver el archivo [LICENSE](LICENSE) para más detalles.
