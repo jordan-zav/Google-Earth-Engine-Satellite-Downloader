@@ -231,3 +231,7 @@ Para procesos que duren más de 5 minutos, avisar antes de iniciar y monitorear 
 ## Citación
 
 Si usas este repositorio en un proyecto académico o técnico, cita el software usando el archivo CITATION.cff incluido en el repositorio.
+
+## Licencia
+
+Este proyecto está sujeto a los términos de la licencia GNU GPLv3 y el acuerdo de Licencia Dual descrito al inicio de este documento. Ver el archivo [LICENSE](LICENSE) para más detalles.
